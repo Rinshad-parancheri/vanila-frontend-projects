@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    height: 100dvh;
+    width: 100dvw;
+    justify-content: center;
+    align-items: center;
+}
+
+.panels-container {
+    display: flex;
+    height: 90dvh;
+    width: 90dvw;
+    justify-content: center;
+}
+
+.panels {
+    border-radius: 50px;
+    margin: 20px;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 0.5;
+    display: flex;
+    align-items: flex-end;
+    transition: flex 0.8s ease-in;
+    position: relative;
+}
+
+.panels h3 {
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    font-size: 24px;
+    color: white;
+}
+
+.panels.active {
+    flex: 7;
+}
